@@ -1,6 +1,6 @@
 {
    "name": "similarity-clone",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "private": true,
    "scripts": {
       "dev": "next dev",
@@ -39,7 +39,6 @@
       "next-themes": "^0.2.1",
       "openai": "^3.2.1",
       "prism-react-renderer": "^2.0.3",
-      "prisma": "^4.13.0",
       "react": "18.2.0",
       "react-dom": "18.2.0",
       "react-hook-form": "^7.43.9",
@@ -54,8 +53,12 @@
       "@next/eslint-plugin-next": "^13.3.4",
       "@typescript-eslint/eslint-plugin": "^5.59.2",
       "@typescript-eslint/parser": "^5.59.2",
+      "autoprefixer": "^10.4.14",
       "eslint-config-prettier": "^8.8.0",
       "eslint-plugin-react": "^7.32.2",
-      "eslint-plugin-react-hooks": "^4.6.0"
+      "eslint-plugin-react-hooks": "^4.6.0",
+      "postcss": "^8.4.23",
+      "prisma": "^4.13.0",
+      "tailwindcss": "^3.3.2"
    }
 }
