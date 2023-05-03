@@ -1,9 +1,9 @@
-export default function Home() {
-   return (
-      <main>
-         <h1 className="text-3xl font-bold underline text-rose-600">
-            Hello world!
-         </h1>
-      </main>
-   );
-}
+import React from "react";
+
+import { Paragraph } from "@/components";
+
+const Home = () => {
+   return <div></div>;
+};
+
+export default Home;
