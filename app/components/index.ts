@@ -25,6 +25,8 @@ import {
 import Providers from "./Providers";
 import Navbar from "./Navbar";
 import ThemeToggle from "./ThemeToggle";
+import DocumentationTabs from "./DocumentationTabs";
+import Code from "./Code";
 
 export {
    SignOutButton,
@@ -50,4 +52,6 @@ export {
    DropdownMenuSubContent,
    DropdownMenuSubTrigger,
    DropdownMenuTrigger,
+   DocumentationTabs,
+   Code,
 };
