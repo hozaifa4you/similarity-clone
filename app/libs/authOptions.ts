@@ -3,13 +3,13 @@ import { AuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
-import { db } from "@/libs/db";
+import prismadb from "@/app/libs/prismadb";
 
 const google_client_id = process.env.GOOGLE_CLIENT_ID as string;
 const google_client_secret = process.env.GOOGLE_CLIENT_SECRET as string;
 
 export const authOptions: AuthOptions = {
-   adapter: PrismaAdapter(db),
+   adapter: PrismaAdapter(prismadb),
    session: { strategy: "jwt" },
    pages: { signIn: "/login" },
    providers: [
@@ -29,7 +29,7 @@ export const authOptions: AuthOptions = {
          return session;
       },
       async jwt({ token, user }) {
-         const dbUser = await db.user.findFirst({
+         const dbUser = await prismadb.user.findFirst({
             where: { email: token.email },
          });
 
